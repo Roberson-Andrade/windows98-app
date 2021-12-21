@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Levi Windows";
+  src: url("../fonts/Windows-Regular.ttf") format("tff");
+}
+body {
+  font-family: "Levi Windows";
+  background-color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */
