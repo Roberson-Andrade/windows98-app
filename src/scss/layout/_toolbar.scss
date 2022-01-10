@@ -1,0 +1,23 @@
+.toolbar {
+    min-height: 5vh;
+    background-color: $color-primary;
+
+    display: flex;
+    padding: .5rem;
+
+    &__startBtn {
+
+    }
+
+    &__apps {
+
+    }
+
+    &__openApps {
+        flex-grow: 1;
+    }
+
+    &__utils {
+
+    }
+}
