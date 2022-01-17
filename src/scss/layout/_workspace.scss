@@ -15,19 +15,18 @@
         flex-direction: column;
         align-items: center;
 
-        
         width: 10rem;
+
         &__icon {
             display: block;
             width: 5rem;
-            
         }
 
         &__text {
             text-align: center;
             color: #fff;
             font-size: $font-size-icon;
-            line-height: 1.7;
+            line-height: 1.2;
         }
     }
 }
