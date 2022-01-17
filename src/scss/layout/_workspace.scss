@@ -3,10 +3,31 @@
     background-color: $backgroud-color;
 
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit, 8rem);
     grid-template-rows: repeat(8, 1fr);
     gap: 1rem;
-    grid-auto-flow: column;
+    justify-items: center;
+    align-items: center;
 
-    padding: 1rem;
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        
+        width: 10rem;
+        &__icon {
+            display: block;
+            width: 5rem;
+            
+        }
+
+        &__text {
+            text-align: center;
+            color: #fff;
+            font-size: $font-size-icon;
+            line-height: 1.7;
+        }
+    }
 }
