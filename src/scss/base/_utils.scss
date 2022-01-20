@@ -1,3 +1,12 @@
 .is-dragging {
     cursor: move; 
 }
+
+.selected > img {
+    filter: opacity(0.5) drop-shadow(0 0 0 #000080);
+}
+
+.selected > p {
+    background-color: #000080;
+    border: 1px dotted $color-white;
+}
