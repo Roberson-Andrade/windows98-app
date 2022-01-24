@@ -3,6 +3,7 @@ import { dragEnd, dragStart } from "../handlerFunctions/dragItemHandlers";
 import dragOver from "../handlerFunctions/dropzoneHandlers";
 import selectWorkspaceApp from "../handlerFunctions/SelectedWorkspaceHandler";
 import setupDropzone from "../handlerFunctions/setupDropzoneHandler";
+import toolbarMenuHandler from "../handlerFunctions/toolbarMenuHandler";
 
 const setupDragFeature = () => {
     //Select the drag items
@@ -25,6 +26,10 @@ const setupDragFeature = () => {
         dropZone.addEventListener('dragover', dragOver);
     });
 
+    //Add the toolbar menu
+    const toolbarBtn = document.querySelector('.btn--start')
+    toolbarBtn.addEventListener('click', toolbarMenuHandler)
+
     //remove the selected class when the user click outside of the box
     document.addEventListener('click', ({target}) => {
         const dragItems = document.querySelectorAll('.workspace__item');
@@ -41,8 +46,8 @@ const setupDragFeature = () => {
     //Create or delete dropzones when the window resize
     window.addEventListener('resize', setupDropzone);
 
+    //Create a styled menu for the right click
     window.addEventListener('contextmenu', contextMenuHandler)
-
 };
 
 export default setupDragFeature;

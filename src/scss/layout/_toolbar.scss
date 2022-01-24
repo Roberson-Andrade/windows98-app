@@ -5,25 +5,14 @@
     display: flex;
     align-items: center;
     padding: .3rem .5rem;
+    position: relative;
 
     box-shadow: 
         inset 0px 2px 3px #fff,
         inset 0px 3px 3px #dfdfdf
     ;
 
-    &__startBtn {
-        display: flex;
-        align-items: center;
-        padding: 0 1rem;
-        margin-right: .2rem;
-
-        box-shadow: 
-            inset -2px -2px 2px #0a0a0a, 
-            inset 1px 1px 2px #fff, 
-            inset -2px -2px 2px grey, 
-            inset 2px 2px 2px #dfdfdf
-        ;
-            
+    &__btn {
         &__icon {
             margin-right: .2rem;
         }
@@ -86,5 +75,19 @@
         box-shadow: 
         inset -2px -2px 2px $color-grey-dark-1,
         inset 2px 2px 2px $color-white;
+    }
+
+    &__menu {
+
+        &__item {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+
+            &__img {
+                display: block;
+                margin-right: 1rem;
+            }
+        }
     }
 }
