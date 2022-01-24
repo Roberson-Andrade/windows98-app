@@ -1,0 +1,37 @@
+.menu {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+
+    transform-origin: top left;
+    background-color: $color-primary;
+    
+    font-size: $font-size-icon;
+    box-shadow: 
+        inset -1px -1px 2px #0a0a0a, 
+        inset 1px 1px 1px #fff, 
+        inset -1px -1px 2px grey, 
+        inset 1px 1px 2px #dfdfdf
+    ;
+
+    &__item {
+
+        &--separator {
+            width: 98%;
+            height: .2rem;
+        }
+
+        &:not(.menu__item--separator) {
+            padding-left: 2rem;
+        }
+
+        &:not(.arrow) {
+            padding-right: 2rem;
+        }
+
+        &:hover {
+            background-color: $color-selected;
+        }
+    }
+
+}

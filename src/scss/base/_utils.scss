@@ -3,10 +3,18 @@
 }
 
 .selected > img {
-    filter: opacity(0.5) drop-shadow(0 0 0 #000080);
+    filter: opacity(0.5) drop-shadow(0 0 0 $color-selected);
 }
 
 .selected > p {
-    background-color: #000080;
+    background-color: $color-selected;
     border: 1px dotted $color-white;
+}
+
+.horizontal-separator {
+    box-shadow: inset 0px 1px 2px $color-grey-dark-1, inset 0px 8px 2px $color-white;
+}
+
+.vertical-separator {
+    box-shadow: inset 2px 0px 2px $color-grey-dark-1, inset -5px 0px 2px $color-white;
 }

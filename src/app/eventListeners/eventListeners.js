@@ -1,3 +1,4 @@
+import contextMenuHandler from "../handlerFunctions/contextMenuHandler";
 import { dragEnd, dragStart } from "../handlerFunctions/dragItemHandlers";
 import dragOver from "../handlerFunctions/dropzoneHandlers";
 import selectWorkspaceApp from "../handlerFunctions/SelectedWorkspaceHandler";
@@ -24,18 +25,24 @@ const setupDragFeature = () => {
         dropZone.addEventListener('dragover', dragOver);
     });
 
-    //remove the selected class when the user click outside the box
+    //remove the selected class when the user click outside of the box
     document.addEventListener('click', ({target}) => {
-        const dragItems = document.querySelectorAll('.workspace__item')
-        const dragArrays = [...dragItems]
+        const dragItems = document.querySelectorAll('.workspace__item');
+        const dragArrays = [...dragItems];
 
         if(!(dragArrays.includes(target) || dragArrays.includes(target.parentNode))) {
-            dragItems.forEach(item => item.classList.remove('selected'))
-        }
-    })
+            dragItems.forEach(item => item.classList.remove('selected'));
+        };
+
+        const contextMenu = document.getElementById('context-menu');
+        contextMenu.style.display = 'none'
+    });
 
     //Create or delete dropzones when the window resize
-    window.addEventListener('resize', setupDropzone)
+    window.addEventListener('resize', setupDropzone);
+
+    window.addEventListener('contextmenu', contextMenuHandler)
+
 };
 
 export default setupDragFeature;
