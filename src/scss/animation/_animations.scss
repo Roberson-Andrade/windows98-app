@@ -1,0 +1,33 @@
+.startup-screen {
+    width: 100vw;
+    height: 100vh;
+    padding: 2.5rem;    
+
+    display: flex;
+
+    color: $color-grey-dark-1;
+    font-size: 3rem;
+    font-weight: 600;
+
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    background-color: $color-black-2;
+
+    &__text {
+        flex-grow: 1;
+    }
+}
+
+.energy-logo {
+    display: block;
+
+    width: 60rem;
+    height: 40rem;
+    top:2rem;
+    right: 2rem;
+
+}

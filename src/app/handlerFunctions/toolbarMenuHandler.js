@@ -7,7 +7,8 @@ const toolbarMenuHandler = (event) => {
         toolbarMenu.style.display = 'none'
     } else {
         toolbarBtn.classList.add('toolbar-menu-active')
-        toolbarMenu.style.display = 'block'
+        toolbarMenu.style.display = 'flex'
+        toolbarMenu.style.flexDirection = 'row'
     }
 };
 

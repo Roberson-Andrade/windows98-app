@@ -8,6 +8,15 @@
 </head>
 
 <body>
+    <div class="startup-screen">
+        <div class="startup-screen__text">
+            <p>Awartd Modular Bios v4.60PGA, An Energy Star ally</p>
+            <p>Copyright (C) 1984-98, Award Software, Inc.</p>
+        </div>
+
+
+        <img src="./Images/energy-img.PNG" alt="Logo" class="energy-logo">
+    </div>
     <div class="container">
         <div class="workspace">
             <div class="workspace__drop-zone">
@@ -82,10 +91,10 @@
         </div>
 
         <div class="toolbar">
-            <div class="btn btn--start">
+            <button class="btn btn--start">
                 <img class="toolbar__btn__icon" src="./Images/windows-0.png">
                 <p class="toolbar__btn__text">Start</p>
-            </div>
+            </button>
 
             <span class="toolbar__separator vertical-separator"></span>
             <span class="toolbar__bar-separator"></span>
@@ -123,69 +132,93 @@
             </div>
 
             <div id="toolbar-menu" class="toolbar__menu menu menu--toolbar">
-                <div class="toolbar__menu__item menu__item">
-                    <img src="./Images/directory_open_file_mydocs-1.png" alt="" class="toolbar__menu__item__img">
-                    <p class="toolbar__menu__item__text">Abrir documento do Office</p> 
+                <div class="toolbar__menu__vertical-logo"><p>Windows<span class="text-low-weight">98</span></p></div>
+
+                <div>
+                    <div class="toolbar__menu__item menu__item">
+                        <img src="./Images/directory_open_file_mydocs-1.png" alt="" class="toolbar__menu__item__img">
+                        <p class="toolbar__menu__item__text">Abrir documento do Office</p> 
+                    </div>
+                    <div class="toolbar__menu__item menu__item">
+                        <img src="./Images/document-0.png" alt="" class="toolbar__menu__item__img">
+                        <p class="toolbar__menu__item__text">Novo documento do Office</p> 
+                    </div>
+                    <div class="toolbar__menu__item menu__item">
+                        <img src="./Images/accessibility_two_windows.png" alt="" class="toolbar__menu__item__img">
+                        <p class="toolbar__menu__item__text">Programas</p> 
+                        <div class="arrow arrow--medium"></div>
+                    </div>
+                    <div class="menu__item menu__item--separator horizontal-separator"></div>
+                    <div class="toolbar__menu__item menu__item">
+                        <img src="./Images/directory_favorites-0.png" alt="" class="toolbar__menu__item__img">
+                        <p class="toolbar__menu__item__text">Favoritos</p> 
+                        <div class="arrow arrow--medium"></div>
+                    </div>
+                    <div class="toolbar__menu__item menu__item">
+                        <img src="./Images/directory_closed_cool-2.png" alt="" class="toolbar__menu__item__img">
+                        <p class="toolbar__menu__item__text">Documentos</p> 
+                        <div class="arrow arrow--medium"></div>
+                    </div>
+                    <div class="toolbar__menu__item menu__item">
+                        <img src="./Images/settings_gear_cool-4.png" alt="" class="toolbar__menu__item__img">
+                        <p class="toolbar__menu__item__text">Configuração</p>
+                        <div class="arrow arrow--medium"></div>
+                    </div>
+                    <div class="toolbar__menu__item menu__item">
+                        <img src="./Images/search_file_2_cool-1.png" alt="" class="toolbar__menu__item__img">
+                        <p class="toolbar__menu__item__text">Localizar</p> 
+                        <div class="arrow arrow--medium"></div>
+                    </div>
+                    <div class="toolbar__menu__item menu__item">
+                        <img src="./Images/help_book_cool_small-4.png" alt="" class="toolbar__menu__item__img">
+                        <p class="toolbar__menu__item__text">Ajuda</p> 
+                    </div>
+                    <div class="toolbar__menu__item menu__item">
+                        <img src="./Images/executable-0.png" alt="" class="toolbar__menu__item__img">
+                        <p class="toolbar__menu__item__text">Executar</p> 
+                    </div>
+                    <div class="menu__item menu__item--separator horizontal-separator"></div>
+                    <div class="toolbar__menu__item menu__item">
+                        <img src="./Images/key_win-3.png" alt="" class="toolbar__menu__item__img">
+                        <p class="toolbar__menu__item__text">Efetuar logoff</p> 
+                    </div>
+                    <div class="toolbar__menu__item menu__item">
+                        <img src="./Images/shut_down_normal-0.png" alt="" class="toolbar__menu__item__img">
+                        <p class="toolbar__menu__item__text">Desligar</p> 
+                    </div>
                 </div>
-                <div class="toolbar__menu__item menu__item">
-                    <img src="./Images/document-0.png" alt="" class="toolbar__menu__item__img">
-                    <p class="toolbar__menu__item__text">Novo documento do Office</p> 
-                </div>
-                <div class="toolbar__menu__item menu__item">
-                    <img src="./Images/accessibility_two_windows.png" alt="" class="toolbar__menu__item__img">
-                    <p class="toolbar__menu__item__text">Programas</p> 
-                </div>
-                <div class="menu__item menu__item--separator horizontal-separator"></div>
-                <div class="toolbar__menu__item menu__item">
-                    <img src="./Images/directory_favorites-0.png" alt="" class="toolbar__menu__item__img">
-                    <p class="toolbar__menu__item__text">Favoritos</p> 
-                </div>
-                <div class="toolbar__menu__item menu__item">
-                    <img src="./Images/directory_closed_cool-2.png" alt="" class="toolbar__menu__item__img">
-                    <p class="toolbar__menu__item__text">Documentos</p> 
-                </div>
-                <div class="toolbar__menu__item menu__item">
-                    <img src="./Images/settings_gear_cool-4.png" alt="" class="toolbar__menu__item__img">
-                    <p class="toolbar__menu__item__text">Configuração</p>
-                </div>
-                <div class="toolbar__menu__item menu__item">
-                    <img src="./Images/search_file_2_cool-1.png" alt="" class="toolbar__menu__item__img">
-                    <p class="toolbar__menu__item__text">Localizar</p> 
-                </div>
-                <div class="toolbar__menu__item menu__item">
-                    <img src="./Images/help_book_cool_small-4.png" alt="" class="toolbar__menu__item__img">
-                    <p class="toolbar__menu__item__text">Ajuda</p> 
-                </div>
-                <div class="toolbar__menu__item menu__item">
-                    <img src="./Images/executable-0.png" alt="" class="toolbar__menu__item__img">
-                    <p class="toolbar__menu__item__text">Executar</p> 
-                </div>
-                <div class="menu__item menu__item--separator horizontal-separator"></div>
-                <div class="toolbar__menu__item menu__item">
-                    <img src="./Images/key_win-3.png" alt="" class="toolbar__menu__item__img">
-                    <p class="toolbar__menu__item__text">Efetuar logoff</p> 
-                </div>
-                <div class="toolbar__menu__item menu__item">
-                    <img src="./Images/shut_down_normal-0.png" alt="" class="toolbar__menu__item__img">
-                    <p class="toolbar__menu__item__text">Desligar</p> 
-                </div>
+                
             </div>
         </div>
 
         <div id="context-menu" class="menu menu--context">
-            <div class="menu__item arrow">Active Desktop</div>
+            <div class="menu__item">
+                <p>Active Desktop</p>
+            </div>
             <div class="menu__item menu__item--separator horizontal-separator"></div>
-            <div class="menu__item arrow">Organizar icones</div>
-            <div class="menu__item">Alinhar icones</div>
+            <div class="menu__item">
+                <p>Organizar icones</p>
+                <div class="arrow arrow--small"></div>
+            </div>
+            <div class="menu__item">
+                <p>Alinhar icones</p>
+                <div class="arrow arrow--small"></div>
+            </div>
             <div class="menu__item menu__item--separator horizontal-separator"></div>
             <div class="menu__item">Atualizar</div>
             <div class="menu__item menu__item--separator horizontal-separator"></div>
             <div class="menu__item">Colar</div>
             <div class="menu__item">Colar atalho</div>
             <div class="menu__item menu__item--separator horizontal-separator"></div>
-            <div class="menu__item arrow">Novo</div>
+            <div class="menu__item">
+                <p>Novo</p>
+                <div class="arrow arrow--small"></div>
+            </div>
             <div class="menu__item menu__item--separator horizontal-separator"></div>
-            <div class="menu__item">Propriedades</div>
+            <div class="menu__item">
+                <p>Propriedades</p>
+                <div class="arrow arrow--small"></div>
+            </div>
         </div>
     </div>
 </body>

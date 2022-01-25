@@ -15,11 +15,25 @@
     box-shadow: inset 2px 0px 2px $color-grey-dark-1, inset -5px 0px 2px $color-white;
 }
 
-.toolbar-menu-active {
-    box-shadow: 
-            inset 2px 2px 2px #0a0a0a, 
-            inset -1px -1px 2px #fff, 
-            inset 2px 2px 2px grey, 
-            inset -2px -2px 2px #dfdfdf
-        ;
+.text-low-weight {
+    font-weight: 400;
+}
+
+.arrow {
+    width: 0; 
+    height: 0; 
+
+    &--medium {
+        border-top: .8rem solid transparent;
+        border-bottom: .8rem solid transparent;
+        
+        border-left: .8rem solid black;
+    }
+    
+    &--small {
+        border-top: .5rem solid transparent;
+        border-bottom: .5rem solid transparent;
+        
+        border-left: .5rem solid black;
+    }
 }
