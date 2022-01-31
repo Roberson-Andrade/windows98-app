@@ -8,15 +8,62 @@
 </head>
 
 <body>
+    <div class="startup-img-wrapper">
+      <img src="./Images/win98-startup.jpg" alt="Startup-img" class="startup-img">
+      <audio id="start-sound" autoplay="muted"><source src="./Audios/Microsoft Windows 98 Startup Sound.mp3" type="audio/mpeg"></audio>
+    </div>
+  
     <div class="startup-screen">
         <div class="startup-screen__text">
-            <p>Awartd Modular Bios v4.60PGA, An Energy Star ally</p>
-            <p>Copyright (C) 1984-98, Award Software, Inc.</p>
-        </div>
+          <div class="startup-screen__text__item ">
+            <img class="startup-screen__text__img" src="./Images/startup-logo.PNG" alt="Icon">
+            <div class="startup-screen__text__text-wrapper">
+              <p>Award Modular Bios v4.60PGA, An Energy Star ally</p>
+              <p>Copyright (C) 1984-98, Award Software, Inc.</p>
+            </div>
+          </div>
 
+          <div class="startup-screen__text__item">
+            <p>(55XWUQ0E) Intel I430VX PCIset (TM)</p>
+          </div>
+
+          <div class="startup-screen__text__item">
+            <p>PENTIUM-S CPU at 120MHZ</p>
+          </div>
+
+          <div class="startup-screen__text__item parent-memory-animation">
+            <p>Memory Text   : <span class="memory-animation"></span>K OK</p>
+          </div>
+
+          <div class="startup-screen__text__item copyright-animation">
+            <p>Award Plug and Play BIOS Extension v1.0A</p>
+            <p>Copyright (C) 1997, Award Software, Inc.</p>
+
+            <div class="detecting-animation detecting-animation--1">
+              <p>Detecting IDE Primary Master  ... PCemHD</p>
+            </div>
+            <div class="detecting-animation detecting-animation--2">
+              <p>Detecting IDE Primary Slave   ... PCemCD</p>
+            </div>
+            <div class="detecting-animation detecting-animation--3">
+              <p>Detecting IDE Secondary Master ... none</p>
+            </div>
+            <div class="detecting-animation detecting-animation--4">
+              <p>Detecting IDE Secondary Slave  ... none</p>
+            </div>
+          </div>
+          
+          <div class="startup-screen__text__item">
+            <div class="startup-screen__text__text-wrapper">
+              <p>Press <span class="font-white-bold">DEL</span> to enter SETUP</p>
+              <p>12/10/97-i430vx, UMC8669-2A59GH2BC-00</p>
+            </div>
+          </div>
+        </div>
 
         <img src="./Images/energy-img.PNG" alt="Logo" class="energy-logo">
     </div>
+
     <div class="container">
         <div class="workspace">
             <div class="workspace__drop-zone">
