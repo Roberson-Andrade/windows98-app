@@ -57,8 +57,13 @@
         }
 
         &__time-text {
-            font-size: $font-size-large;
-            margin-left: 1.5rem;
+          font-size: $font-size-large;
+          margin-left: 1.5rem;
+
+          @media only screen and (max-width: $bp-medium-small) {
+            font-size: 1.19rem;
+            margin-left: 0;
+          }
         }
     }
 

@@ -4,10 +4,32 @@
   height: 100vh;
   padding: 2.5rem;    
 
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+
   color: $color-grey-dark-1;
-  font-size: 3rem;
+  font-size: $font-size-largest;
   font-weight: 600;
 
+  
+  @media only screen and (max-width: $bp-largest) {
+    font-size: $font-size-large;
+  }
+  
+  @media only screen and (max-width: $bp-medium) {
+    font-size: $font-size-medium;
+  }
+  
+  @media only screen and (max-width: $bp-large) {
+    font-size: $font-size-medium-small;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: $font-size-small;
+  }
 
   position: absolute;
   top: 0;
@@ -23,14 +45,17 @@
     letter-spacing: 2px;
 
     &__item {
-      word-spacing: 1rem;
       display: flex;
+      align-items: center;
       margin-bottom: 2rem;
+      word-spacing: 1rem;
     }
-    
+
     &__img {
-      width: 10rem;
-      height: 10rem;
+      @media only screen and (max-width: $bp-large) {
+        width: 4rem;
+        height: 6rem;
+      }
     }
   }
 
@@ -41,6 +66,22 @@
 
   width: 60rem;
   height: 40rem;
+
+  @media only screen and (max-width: $bp-largest) {
+    width: 50rem;
+    height: 30rem;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    width: 40rem;
+    height: 20rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    width: 25rem;
+    height: 12.5rem;
+  }
+
   top:2rem;
   right: 2rem;
 

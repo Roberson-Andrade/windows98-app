@@ -55,15 +55,14 @@ const startUpAnimation = () => {
     .add({
       targets:'.startup-img-wrapper',
       complete: function() {
-        document.querySelector('.startup-img-wrapper').style.zIndex = 20
-        document.querySelector('audio').play()
+        document.querySelector('.startup-screen').style.display = 'none'
       }
     })
     .add({
       targets:['.startup-img-wrapper', '.startup-screen'],
       complete: function() {
-        document.querySelector('.startup-img-wrapper').style.zIndex = -10
-        document.querySelector('.startup-screen').style.zIndex = -11
+        document.querySelector('.startup-img-wrapper').style.display = 'none'
+        document.querySelector('.container').style.display = 'flex'
       }
     }, '+= 8000')
 };
