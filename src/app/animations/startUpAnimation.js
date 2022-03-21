@@ -64,7 +64,7 @@ const startUpAnimation = () => {
         document.querySelector('.startup-img-wrapper').style.display = 'none'
         document.querySelector('.container').style.display = 'flex'
       }
-    }, '+= 8000')
+    }, '+= 2000')
 };
 
 export default startUpAnimation;
