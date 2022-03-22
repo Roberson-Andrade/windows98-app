@@ -8,7 +8,7 @@ Check out the app running [here](https://roberson-andrade.github.io/windows98-ap
 - All the styles are created based on the windows 98 design;
 - Pretty nostalgic!
 
-## Build with
+## Built with
 - Vanilla JavaScrip;
 - HTML and CSS;
 - Sass;
